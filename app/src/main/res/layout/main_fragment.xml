@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefreshLayout"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:id="@+id/greetTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello! "
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/greetTV"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/myLessonsHeaderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have "
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetTV"
+        />
+    <TextView
+        android:id="@+id/myLessonsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LESSONS"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toEndOf="@+id/myLessonsHeaderTV"
+        app:layout_constraintTop_toBottomOf="@+id/greetTV"
+        />
+    <TextView
+        android:id="@+id/myReviewHeaderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have "
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myLessonsHeaderTV"
+        />
+    <TextView
+        android:id="@+id/myReviewTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REVIEWS"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toEndOf="@+id/myReviewHeaderTV"
+        app:layout_constraintTop_toBottomOf="@+id/myLessonsHeaderTV"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Session"
+        android:id="@+id/startBut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review Lessons"
+        android:id="@+id/reviewBut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startBut"
+        app:layout_constraintVertical_bias="0.05"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Settings"
+        android:id="@+id/accountBut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startBut"
+        app:layout_constraintVertical_bias="0.25"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
